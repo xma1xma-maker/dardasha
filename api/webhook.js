@@ -22,12 +22,12 @@ export default async function (req, res) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             chat_id: chatId,
-            text: `🎁 أهلاً ${name}\n\nاضغط الزر وابدأ الآن 👇`,
+            text: `🎁 أهلاً ${name}\n\nابدا المحادثة معاي من هنا 👇`,
             reply_markup: {
               inline_keyboard: [
                 [
                   {
-                    text: "🎁 Claim your gift",
+                    text: "اضغط هنا",
                     web_app: {
                       url: webUrl
                     }
